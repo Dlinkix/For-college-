@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Курс валют</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="widget" id="currencyWidget">
+  <div class="widget__header">
+    <h2>Курс валют</h2>
+    <span class="widget__date" id="widgetDate"></span>
+  </div>
+
+  <ul class="rates" id="ratesList">
+    <li class="rates__loading">Загрузка курсов</li>
+  </ul>
+
+  <div class="search">
+    <input
+      type="text"
+      id="currencyInput"
+      class="search__input"
+      placeholder="Введите валюту:"
+      autocomplete="off"
+    >
+    <button id="searchBtn" class="search__btn">Показать курс</button>
+  </div>
+
+  <div class="search__result" id="searchResult"></div>
+  <div class="search__error" id="searchError"></div>
+</div>
+
+<script src="Load.js"></script>
+</body>
+</html>
